@@ -1,0 +1,84 @@
+body {
+  background: black;
+}
+
+.main {
+  padding: 2rem;
+  display: block;
+}
+
+h1{
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: white;
+}
+
+a.button1 {
+  padding: 0.8em;
+  border: 0.1em solid;
+  text-align: center;
+  color: white;
+  background: black;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  border-radius: 12px;
+}
+a.button2 {
+  padding: 0.8em;
+  border: 0.1em solid;
+  text-align: center;
+  color: white;
+  background: black;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  border-radius: 12px;
+}
+a.button3 {
+  padding: 0.8em;
+  border: 0.1em solid;
+  text-align: center;
+  color: white;
+  background: black;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  border-radius: 12px;
+}
+a.button4 {
+  padding: 0.8em;
+  border: 0.1em solid;
+  text-align: center;
+  color: white;
+  background: black;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  border-radius: 12px;
+}
+a.button5{
+  padding:.7em;
+  border: 0.1em solid;
+  text-align: center;
+  color: black;
+  background: crimson;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  border-radius: 12px;
+}
+.button5 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin: 1em auto;
+  grid-gap: 1rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin: 0 auto;
+  grid-gap: 1rem;
+}
+@media (min-width: 320px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
