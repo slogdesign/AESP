@@ -1,5 +1,15 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
 body {
   background: black;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .main {
@@ -8,58 +18,63 @@ body {
 }
 
 h1{
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-family: "Roboto Slab Thin", sans-serif;
   text-align: center;
-  color: white;
+  color: #FFFFFF;
+  margin: 50px;
 }
 
 a.button1 {
   padding: 0.8em;
   border: 0.1em solid;
   text-align: center;
-  color: white;
+  color: #FFFFFF;
   background: black;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   border-radius: 12px;
+  box-shadow: 2px 4px #CC3300;
 }
 a.button2 {
   padding: 0.8em;
   border: 0.1em solid;
   text-align: center;
-  color: white;
+  color: #FFFFFF;
   background: black;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   border-radius: 12px;
+  box-shadow: 2px 4px #CC3300;
 }
 a.button3 {
   padding: 0.8em;
   border: 0.1em solid;
   text-align: center;
-  color: white;
+  color: #FFFFFF;
   background: black;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   border-radius: 12px;
+  box-shadow: 2px 4px #CC3300;
 }
 a.button4 {
   padding: 0.8em;
   border: 0.1em solid;
   text-align: center;
-  color: white;
+  color: #FFFFFF;
   background: black;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   border-radius: 12px;
+  box-shadow: 2px 4px #CC3300;
 }
 a.button5{
   padding:.7em;
   border: 0.1em solid;
   text-align: center;
   color: black;
-  background: crimson;
+  background: #FFFFFF;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   border-radius: 12px;
@@ -67,8 +82,39 @@ a.button5{
 .button5 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  margin: 1em auto;
+  margin: 3em auto;
   grid-gap: 1rem;
+}
+a.button6{
+  padding:.7em;
+  border: 0.1em solid rgb(204, 50, 1);
+  text-align: center;
+  color: white;
+  background: transparent;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  border-radius: 12px;
+}
+.button6 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin: 3em auto;
+  grid-gap: 1rem;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: none;
+  text-decoration: none;
+}
+a:hover {
+  color: none;
+  text-decoration: none;
+}
+a:active {
+  color: none;
+  text-decoration: none;
 }
 .grid {
   display: grid;
