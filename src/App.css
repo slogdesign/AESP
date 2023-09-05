@@ -1,0 +1,76 @@
+/* Your custom styles */
+body {
+  background: black;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  min-height: 100vh; /* Use viewport height for full-screen height */
+  margin: 0; /* Remove default margin */
+}
+
+.main {
+  padding: 2rem;
+  text-align: center; /* Center the text within the main section */
+  max-width: 2000px; /* Increase the maximum width of the container */
+  width: 100%; /* Ensure the container takes the full width of the viewport */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+h1 {
+  font-weight: 100;
+  font-family: "Roboto Slab Thin", sans-serif;
+  color: #FFFFFF;
+  margin: 20px 0; /* Adjust margin for spacing */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust column width as needed */
+  gap: 2.5em; /* Adjust gap between buttons */
+  justify-content: center; /* Center the buttons horizontally within the grid */
+  margin-top: 10px; /* Add margin to create space between .main and .grid */
+}
+
+/* Example custom styles for buttons */
+.button1,
+.button2,
+.button3,
+.button4,
+.button5,
+.button6 {
+  padding: 0.8em;
+  border: 0.1em solid;
+  text-align: center;
+  color: #FFFFFF;
+  background: black;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  border-radius: 12px;
+  box-shadow: 0px 4px #CC3300;
+  display: block; /* Ensure buttons are displayed as blocks */
+  width: 100%; /* Make buttons expand to full width of their container */
+  margin-bottom: 10px; /* Add margin between buttons */
+}
+.responsive-buttons {
+  margin-top: 20px; /* Add space above buttons 5 and 6 */
+}
+
+/* Media query for smaller screens (e.g., smartphones) */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
+
+  /* Responsive styles for buttons */
+  .button1,
+  .button2,
+  .button3,
+  .button4,
+  .button5,
+  .button6 {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    padding: 0.5em 1em; /* Adjust padding for smaller screens */
+    margin: 10px; /* Adjust margin for spacing */
+  }
+}
