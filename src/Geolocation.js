@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import React, { Component } from 'react';
+
 class Geolocation extends Component {
   componentDidMount() {
     if ("geolocation" in navigator) {
