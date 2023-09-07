@@ -106,11 +106,31 @@ class App extends Component {
       throw error;
     }
   };
-
-  // Function to calculate distance between two sets of coordinates
+  
   calculateDistance = (lat1, lon1, lat2, lon2) => {
-    // Replace this with your distance calculation logic
-    // Example: Haversine formula or any other suitable method
+    // Convert latitude and longitude from degrees to radians
+    const degToRad = (degrees) => (degrees * Math.PI) / 180;
+    const radius = 6371; // Radius of the Earth in kilometers
+  
+    const lat1Rad = degToRad(lat1);
+    const lon1Rad = degToRad(lon1);
+    const lat2Rad = degToRad(lat2);
+    const lon2Rad = degToRad(lon2);
+  
+    // Haversine formula
+    const dLat = lat2Rad - lat1Rad;
+    const dLon = lon2Rad - lon1Rad;
+  
+    const a =
+      Math.sin(dLat / 2) ** 2 +
+      Math.cos(lat1Rad) * Math.cos(lat2Rad) * Math.sin(dLon / 2) ** 2;
+  
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  
+    // Calculate the distance in kilometers
+    const distance = radius * c;
+  
+    return distance;
   };
 
   render() {
