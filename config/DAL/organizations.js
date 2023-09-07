@@ -9,7 +9,7 @@ const convertZipCodeToCoordinates = async (zipCode) => {
   try {
     // Make an API request to convert the zip code to coordinates
     // Replace 'YOUR_GOOGLE_API_KEY' with your actual API key
-    const apiKey = 'YOUR_GOOGLE_API_KEY';
+    const apiKey = 'AIzaSyC_7wmilpa7AraTuZo-EQ66FVdRmBGsems';
     const apiUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${zipCode}&key=${apiKey}`;
     const response = await fetch(apiUrl);
 
