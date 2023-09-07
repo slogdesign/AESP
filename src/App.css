@@ -71,7 +71,7 @@ h1 {
   .button4,
   .button5,
   .button6,
-  .button7 { /* Include the button7 class for the Elderly Services button */
+  .button7 { 
     font-size: 16px; /* Adjust font size for smaller screens */
     padding: 0.5em 1em; /* Adjust padding for smaller screens */
     margin: 10px; /* Adjust margin for spacing */
