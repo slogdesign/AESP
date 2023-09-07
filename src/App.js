@@ -1,8 +1,25 @@
 import React, { Component } from 'react';
-import Geolocation from './Geolocation'; // Import the Geolocation component
+import Geolocation from './Geolocation';
 import './App.css';
+const aespdb = require('./aespdb'); // Import the aespdb object
 
 class App extends Component {
+  state = {
+    organizations: [],
+  };
+
+  componentDidMount() {
+    // Fetch organizations from the database
+    aespdb.any('SELECT * FROM aesptable')
+      .then(data => {
+        console.log('Fetched organizations:', data);
+        this.setState({ organizations: data });
+      })
+      .catch(error => {
+        console.error('Error fetching organizations:', error);
+      });
+  }
+
   render() {
     return (
       <div className="App">
@@ -10,18 +27,12 @@ class App extends Component {
           <h1>ALTERNATIVE EMERGENCY LINES TO POLICE</h1>
         </section>
         <div className="grid">
-          <a href="tel:1 (800) 854-7771" className="button1" id="b1">
-            Mental Health Crisis
-          </a>
-          <a href="tel:1 (800) 479-7328" className="button2" id="b2">
-            Domestic Violence & SA
-          </a>
-          <a href="something" className="button3" id="b3">
-            LGBTQ+ Counseling & Legal Help
-          </a>
-          <a href="tel:1 (877) 477-3646" className="button4" id="b4">
-            Elderly Protective Services
-          </a>
+          {/* Display organizations here */}
+          {this.state.organizations.map(org => (
+            <a href={`tel:${org.PhoneNumber1}`} className="button1" key={org.OrganizationName}>
+              {org.OrganizationName}
+            </a>
+          ))}
         </div>
         <div className="responsive-buttons">
           <a href="https://dontcallthepolice.com/los-angeles/" className="button5" id="b5">
