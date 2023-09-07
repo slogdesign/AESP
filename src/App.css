@@ -38,7 +38,8 @@ h1 {
 .button3,
 .button4,
 .button5,
-.button6 {
+.button6,
+.button7 { /* Include the button7 class for the Elderly Services button */
   padding: 0.8em;
   border: 0.1em solid;
   text-align: center;
@@ -52,6 +53,7 @@ h1 {
   width: 100%; /* Make buttons expand to full width of their container */
   margin-bottom: 10px; /* Add margin between buttons */
 }
+
 .responsive-buttons {
   margin-top: 20px; /* Add space above buttons 5 and 6 */
 }
@@ -68,7 +70,8 @@ h1 {
   .button3,
   .button4,
   .button5,
-  .button6 {
+  .button6,
+  .button7 { /* Include the button7 class for the Elderly Services button */
     font-size: 16px; /* Adjust font size for smaller screens */
     padding: 0.5em 1em; /* Adjust padding for smaller screens */
     margin: 10px; /* Adjust margin for spacing */
