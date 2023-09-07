@@ -5,7 +5,46 @@ import './App.css';
 class App extends Component {
   state = {
     organizations: [],
+    userLocation: null, // Store user's location data here
   };
+
+  componentDidMount() {
+    // Access the API key from environment variables
+    const apiKey = process.env.REACT_APP_GOOGLE_API_KEY;
+
+    // Check if geolocation is available
+    if ('geolocation' in navigator) {
+      navigator.geolocation.getCurrentPosition(async (position) => {
+        // Get the user's latitude and longitude
+        const { latitude, longitude } = position.coords;
+
+        // Store the user's location in the state
+        this.setState({ userLocation: { latitude, longitude } });
+
+        // Create the API request URL
+        const apiUrl = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${apiKey}`;
+
+        try {
+          // Make the API request
+          const response = await fetch(apiUrl);
+          if (!response.ok) {
+            throw new Error('Failed to fetch data from the API');
+          }
+
+          // Parse the response data as JSON
+          const data = await response.json();
+
+          // You can now use the data from the Google Maps Geocoding API as needed
+          console.log('Geocoding API Response:', data);
+        } catch (error) {
+          console.error('Error:', error);
+        }
+      });
+    } else {
+      // Geolocation is not available in this browser
+      // Handle accordingly, e.g., by showing a message to the user
+    }
+  }
 
   render() {
     return (
