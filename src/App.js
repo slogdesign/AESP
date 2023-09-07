@@ -1,24 +1,11 @@
 import React, { Component } from 'react';
 import Geolocation from './Geolocation';
 import './App.css';
-const aespdb = require('./aespdb'); // Import the aespdb object
 
 class App extends Component {
   state = {
     organizations: [],
   };
-
-  componentDidMount() {
-    // Fetch organizations from the database
-    aespdb.any('SELECT * FROM aesptable')
-      .then(data => {
-        console.log('Fetched organizations:', data);
-        this.setState({ organizations: data });
-      })
-      .catch(error => {
-        console.error('Error fetching organizations:', error);
-      });
-  }
 
   render() {
     return (
@@ -27,6 +14,20 @@ class App extends Component {
           <h1>ALTERNATIVE EMERGENCY LINES TO POLICE</h1>
         </section>
         <div className="grid">
+          {/* Main buttons */}
+          <a href="#mentalHealth" className="button2">
+            Mental Health Services
+          </a>
+          <a href="#domesticViolence" className="button3">
+            Domestic Violence Support
+          </a>
+          <a href="#lgbtq" className="button4">
+            LGBTQ+ Support
+          </a>
+          <a href="#elderlyServices" className="button7">
+            Elderly Services
+          </a>
+
           {/* Display organizations here */}
           {this.state.organizations.map(org => (
             <a href={`tel:${org.PhoneNumber1}`} className="button1" key={org.OrganizationName}>
