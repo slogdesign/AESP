@@ -11,3 +11,4 @@ resolve: {
     // Add similar entries for other core modules as needed.
   },
 },
+};
