@@ -10,7 +10,7 @@ class App extends Component {
 
   componentDidMount() {
     // Access the API key from environment variables
-    const apiKey = process.env.REACT_APP_GOOGLE_API_KEY;
+    const apiKey = process.env.REACT_APP_GOOGLE_API_KEY; // Replace 'YOUR_API_KEY' with your actual environment variable name
 
     // Check if geolocation is available
     if ('geolocation' in navigator) {
