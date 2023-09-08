@@ -137,6 +137,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <a href="https://www.slogdesign.io" target="_blank" rel="noopener noreferrer">
+  <img src="https://www.slogdesign.io/wp-content/uploads/2023/06/SLOGO3-1.png" alt="SLOGO" className="logo" />
+</a>
+
         {/* LGBTQ+ Card */}
         <section className="hero-section">
           <div className="card-grid">
