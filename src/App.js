@@ -137,7 +137,34 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* Your UI components go here */}
+        <section className="hero-section">
+          <div className="card-grid">
+            <a className="card" href="#mentalHealth">
+              <div className="card__background"></div>
+              <div className="card__content">
+                <p className="card__category">Mental Health Services</p>
+              </div>
+            </a>
+            <a className="card" href="#domesticViolence">
+              <div className="card__background"></div>
+              <div className="card__content">
+                <p className="card__category">Domestic Violence Support</p>
+              </div>
+            </a>
+            <a className="card" href="#lgbtq">
+              <div className="card__background"></div>
+              <div className="card__content">
+                <p className="card__category">LGBTQ+ Services</p>
+              </div>
+            </a>
+            <a className="card" href="#elderlyServices">
+              <div className="card__background"></div>
+              <div className="card__content">
+                <p className="card__category">Elderly Care Services</p>
+              </div>
+            </a>
+          </div>
+        </section>
       </div>
     );
   }
