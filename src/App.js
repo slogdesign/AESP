@@ -141,38 +141,36 @@ class App extends Component {
           <h1>ALTERNATIVE EMERGENCY LINES TO POLICE</h1>
         </section>
         <div className="grid">
-          {/* Cards for Mental Health, LGBTQ, Domestic Violence, and Elderly Services */}
-          <div className="card">
-            <div className="card__content">
-              <p className="card__category">Mental Health Services</p>
-              <h3 className="card__heading">Your Mental Health Support</h3>
-            </div>
+          {/* LGBTQ+ Card */}
+          <div className="card card__lgbtq">
+            <p className="card__category">LGBTQ+ Support</p>
+            <h3 className="card__heading">Example Card Heading</h3>
           </div>
-          <div className="card">
-            <div className="card__content">
-              <p className="card__category">LGBTQ+ Support</p>
-              <h3 className="card__heading">LGBTQ+ Support Services</h3>
-            </div>
+
+          {/* Domestic Violence Card */}
+          <div className="card card__domesticviolence">
+            <p className="card__category">Domestic Violence Support</p>
+            <h3 className="card__heading">Example Card Heading</h3>
           </div>
-          <div className="card">
-            <div className="card__content">
-              <p className="card__category">Domestic Violence Support</p>
-              <h3 className="card__heading">Support for Domestic Violence</h3>
-            </div>
+
+          {/* Mental Health Card */}
+          <div className="card card__mentalhealth">
+            <p className="card__category">Mental Health Services</p>
+            <h3 className="card__heading">Example Card Heading</h3>
           </div>
-          <div className="card">
-            <div className="card__content">
-              <p className="card__category">Elderly Services</p>
-              <h3 className="card__heading">Services for the Elderly</h3>
-            </div>
+
+          {/* Elderly Services Card */}
+          <div className="card card__elderlyservices">
+            <p className="card__category">Elderly Services</p>
+            <h3 className="card__heading">Example Card Heading</h3>
           </div>
-          {/* Buttons for Don't Call The Police and 911 */}
-          <a href="https://dontcallthepolice.com/los-angeles/" className="button5">
-            Don't Call The Police
-          </a>
-          <a href="tel:911" className="button6">
-            911
-          </a>
+        </div>
+        <div className="responsive-buttons">
+          {/* Don't Call the Police Button */}
+          <button className="card__button">Don't Call the Police</button>
+          
+          {/* 911 Button */}
+          <button className="card__button">911</button>
         </div>
       </div>
     );
