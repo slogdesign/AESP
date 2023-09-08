@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/slogdesign/AESP/static/css/main.46c3532b.css",
+    "main.js": "/slogdesign/AESP/static/js/main.3176639d.js",
+    "static/js/787.71e31484.chunk.js": "/slogdesign/AESP/static/js/787.71e31484.chunk.js",
+    "index.html": "/slogdesign/AESP/index.html",
+    "main.46c3532b.css.map": "/slogdesign/AESP/static/css/main.46c3532b.css.map",
+    "main.3176639d.js.map": "/slogdesign/AESP/static/js/main.3176639d.js.map",
+    "787.71e31484.chunk.js.map": "/slogdesign/AESP/static/js/787.71e31484.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46c3532b.css",
+    "static/js/main.3176639d.js"
+  ]
+}
