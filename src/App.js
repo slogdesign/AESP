@@ -183,7 +183,7 @@ class App extends Component {
 
         {/* Don't Call the Police and 911 Buttons */}
         <section className="hero-section">
-          <div className="card-grid">
+          <div className="button-grid">
             <a className="button" href="https://www.dontcallthepolice.com" target="_blank" rel="noopener noreferrer">Don't Call the Police</a>
             <a className="button" href="tel:911">911</a>
           </div>
@@ -192,5 +192,8 @@ class App extends Component {
     );
   }
 }
-
 export default App;
+
+
+
+
