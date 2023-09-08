@@ -1,3 +1,5 @@
+import React, { Component } from 'react';
+
 class Geolocation extends Component {
   componentDidMount() {
     if ("geolocation" in navigator) {
@@ -21,6 +23,10 @@ class Geolocation extends Component {
     console.error(`Geolocation error: ${error.message}`);
     // You can provide a user-friendly message or take other actions as needed.
   };
+
+  render() {
+    return null; // You can render some content here if needed.
+  }
 }
 
 export default Geolocation;
