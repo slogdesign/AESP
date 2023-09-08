@@ -23,14 +23,6 @@ class Geolocation extends Component {
     console.error(`Geolocation error: ${error.message}`);
     // You can provide a user-friendly message or take other actions as needed.
   };
-
-  render() {
-    return (
-      <div>
-        {/* Component UI goes here */}
-      </div>
-    );
-  }
 }
 
 export default Geolocation;
