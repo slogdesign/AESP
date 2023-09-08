@@ -137,34 +137,43 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <section className="hero-section">
-          <div className="card-grid">
-            <a className="card" href="#mentalHealth">
-              <div className="card__background"></div>
-              <div className="card__content">
-                <p className="card__category">Mental Health Services</p>
-              </div>
-            </a>
-            <a className="card" href="#domesticViolence">
-              <div className="card__background"></div>
-              <div className="card__content">
-                <p className="card__category">Domestic Violence Support</p>
-              </div>
-            </a>
-            <a className="card" href="#lgbtq">
-              <div className="card__background"></div>
-              <div className="card__content">
-                <p className="card__category">LGBTQ+ Services</p>
-              </div>
-            </a>
-            <a className="card" href="#elderlyServices">
-              <div className="card__background"></div>
-              <div className="card__content">
-                <p className="card__category">Elderly Care Services</p>
-              </div>
-            </a>
-          </div>
+        <section className="main">
+          <h1>ALTERNATIVE EMERGENCY LINES TO POLICE</h1>
         </section>
+        <div className="grid">
+          {/* Cards for Mental Health, LGBTQ, Domestic Violence, and Elderly Services */}
+          <div className="card">
+            <div className="card__content">
+              <p className="card__category">Mental Health Services</p>
+              <h3 className="card__heading">Your Mental Health Support</h3>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card__content">
+              <p className="card__category">LGBTQ+ Support</p>
+              <h3 className="card__heading">LGBTQ+ Support Services</h3>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card__content">
+              <p className="card__category">Domestic Violence Support</p>
+              <h3 className="card__heading">Support for Domestic Violence</h3>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card__content">
+              <p className="card__category">Elderly Services</p>
+              <h3 className="card__heading">Services for the Elderly</h3>
+            </div>
+          </div>
+          {/* Buttons for Don't Call The Police and 911 */}
+          <a href="https://dontcallthepolice.com/los-angeles/" className="button5">
+            Don't Call The Police
+          </a>
+          <a href="tel:911" className="button6">
+            911
+          </a>
+        </div>
       </div>
     );
   }
