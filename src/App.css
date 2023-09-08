@@ -2,17 +2,17 @@
 body {
   background: black;
   display: flex;
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
-  min-height: 100vh; /* Use viewport height for full-screen height */
-  margin: 0; /* Remove default margin */
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh; 
+  margin: 0; 
 }
 
 .main {
   padding: 2rem;
-  text-align: center; /* Center the text within the main section */
-  max-width: 2000px; /* Increase the maximum width of the container */
-  width: 100%; /* Ensure the container takes the full width of the viewport */
+  text-align: center; 
+  max-width: 85%; 
+  width: 100%; 
   box-sizing: border-box; /* Include padding in the width calculation */
   margin: 0 auto; /* Center the container horizontally */
 }

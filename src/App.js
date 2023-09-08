@@ -137,43 +137,61 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <section className="main">
-          <h1>ALTERNATIVE EMERGENCY LINES TO POLICE</h1>
+        <section className="hero-section">
+          <div className="card-grid">
+            
+            {/* LGBTQ+ Card */}
+            <a className="card card__lgbtq" href="#">
+              <div className="card__background" style={{ backgroundImage: "url('https://images.pexels.com/photos/3693901/pexels-photo-3693901.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')" }}></div>
+              <div className="card__content">
+                <p className="card__category">Category</p>
+                <h3 className="card__heading">LGBTQ+ SUPPORT</h3>
+                <p className="card__photographer">(cottonbro studio)</p>
+              </div>
+            </a>
+
+            {/* Domestic Violence Card */}
+            <a className="card card__domesticviolence" href="#">
+              <div className="card__background" style={{ backgroundImage: "url('https://images.pexels.com/photos/6757341/pexels-photo-6757341.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')" }}></div>
+              <div className="card__content">
+                <p className="card__category">Categroy</p>
+                <h3 className="card__heading">DV ASSISTANCE</h3>
+                <p className="card__photographer">(Mariana Montrazi)</p>
+              </div>
+            </a>
+
+            {/* Mental Health Card */}
+            <a className="card card__mentalhealth" href="#">
+              <div className="card__background" style={{ backgroundImage: "url('https://images.pexels.com/photos/7654802/pexels-photo-7654802.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')" }}></div>
+              <div className="card__content">
+                <p className="card__category">Category</p>
+                <h3 className="card__heading">MENTAL HEALTH CRISIS</h3>
+                <p className="card__photographer">(Elijah O'Donnell)</p>
+              </div>
+            </a>
+
+            {/* Elderly Services Card */}
+            <a className="card card__elderlyservices" href="#">
+              <div className="card__background" style={{ backgroundImage: "url('https://images.pexels.com/photos/2586537/pexels-photo-2586537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')" }}></div>
+              <div className="card__content">
+                <p className="card__category">Category</p>
+                <h3 className="card__heading">ELDERLY PROTECTION SERVICES</h3>
+                <p className="card__photographer">(Vlad Chețan)</p>
+              </div>
+            </a>
+          </div>
         </section>
-        <div className="grid">
-          {/* LGBTQ+ Card */}
-          <div className="card card__lgbtq">
-            <p className="card__category">LGBTQ+ Support</p>
-            <h3 className="card__heading">Example Card Heading</h3>
-          </div>
-  
-          {/* Domestic Violence Card */}
-          <div className="card card__domesticviolence">
-            <p className="card__category">Domestic Violence Support</p>
-            <h3 className="card__heading">Example Card Heading</h3>
-          </div>
-  
-          {/* Mental Health Card */}
-          <div className="card card__mentalhealth">
-            <p className="card__category">Mental Health Services</p>
-            <h3 className="card__heading">Example Card Heading</h3>
-          </div>
-  
-          {/* Elderly Services Card */}
-          <div className="card card__elderlyservices">
-            <p className="card__category">Elderly Services</p>
-            <h3 className="card__heading">Example Card Heading</h3>
-          </div>
-        </div>
+
         <div className="responsive-buttons">
           {/* Don't Call the Police Button */}
-          <button className="card__button">Don't Call the Police</button>
-          
+          <button className="button">Don't Call the Police</button>
+
           {/* 911 Button */}
-          <button className="card__button">911</button>
+          <button className="button">911</button>
         </div>
       </div>
     );
   }
 }
+
 export default App;
