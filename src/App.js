@@ -9,8 +9,8 @@ class App extends Component {
   };
 
   componentDidMount() {
-    //  Your API key goes here
-    const apiKey = 'AIzaSyC_7wmilpa7AraTuZo-EQ66FVdRmBGsems';
+    // Access the API key from environment variables
+    const apiKey = process.env.REACT_APP_GOOGLE_API_KEY;
 
     // Check if geolocation is available
     if ('geolocation' in navigator) {
@@ -106,75 +106,38 @@ class App extends Component {
       throw error;
     }
   };
-  
+
+  // Function to calculate distance between two sets of coordinates
   calculateDistance = (lat1, lon1, lat2, lon2) => {
     // Convert latitude and longitude from degrees to radians
     const degToRad = (degrees) => (degrees * Math.PI) / 180;
     const radius = 6371; // Radius of the Earth in kilometers
-  
+
     const lat1Rad = degToRad(lat1);
     const lon1Rad = degToRad(lon1);
     const lat2Rad = degToRad(lat2);
     const lon2Rad = degToRad(lon2);
-  
+
     // Haversine formula
     const dLat = lat2Rad - lat1Rad;
     const dLon = lon2Rad - lon1Rad;
-  
+
     const a =
       Math.sin(dLat / 2) ** 2 +
       Math.cos(lat1Rad) * Math.cos(lat2Rad) * Math.sin(dLon / 2) ** 2;
-  
+
     const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  
+
     // Calculate the distance in kilometers
     const distance = radius * c;
-  
+
     return distance;
   };
 
   render() {
     return (
       <div className="App">
-        <section className="main">
-          <h1>ALTERNATIVE EMERGENCY LINES TO POLICE</h1>
-        </section>
-        <div className="grid">
-          <a href="#mentalHealth" className="button2">
-            Mental Health Services
-          </a>
-          <a href="#domesticViolence" className="button3">
-            Domestic Violence Support
-          </a>
-          <a href="#lgbtq" className="button4">
-            LGBTQ+ Support
-          </a>
-          <a href="#elderlyServices" className="button7">
-            Elderly Services
-          </a>
-          {this.state.organizations.map((org) => (
-            <a
-              href={`tel:${org.PhoneNumber1}`}
-              className="button1"
-              key={org.OrganizationName}
-            >
-              {org.OrganizationName}
-            </a>
-          ))}
-        </div>
-        <div className="responsive-buttons">
-          <a
-            href="https://dontcallthepolice.com/los-angeles/"
-            className="button5"
-            id="b5"
-          >
-            Don't Call The Police
-          </a>
-          <a href="tel:911" className="button6" id="b6">
-            911
-          </a>
-        </div>
-        <Geolocation />
+        {/* Your UI components go here */}
       </div>
     );
   }
