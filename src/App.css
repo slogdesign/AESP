@@ -13,7 +13,6 @@
 
 /* Reset styles */
 * {
-  border: 0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,6 +26,8 @@ html {
 
 body {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* Hero section styles */
@@ -43,8 +44,7 @@ body {
 .card-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-column-gap: var(--spacing-l);
-  grid-row-gap: var(--spacing-l);
+  gap: var(--spacing-l);
   max-width: var(--width-container);
   width: 100%;
 }
@@ -122,22 +122,18 @@ body {
 
 /* Individual card styles */
 .card__lgbtq {
-  /* Add specific styles for the LGBTQ+ card here */
   background-image: url('https://images.pexels.com/photos/3693901/pexels-photo-3693901.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
 }
 
 .card__domesticviolence {
-  /* Add specific styles for the Domestic Violence card here */
   background-image: url('https://images.pexels.com/photos/6757341/pexels-photo-6757341.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
 }
 
 .card__mentalhealth {
-  /* Add specific styles for the Mental Health card here */
   background-image: url('https://images.pexels.com/photos/7654802/pexels-photo-7654802.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
 }
 
 .card__elderlyservices {
-  /* Add specific styles for the Elderly Services card here */
   background-image: url('https://images.pexels.com/photos/2586537/pexels-photo-2586537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
 }
 
@@ -168,5 +164,3 @@ body {
     margin: 10px auto; /* Center the buttons horizontally on smaller screens */
   }
 }
-
-
