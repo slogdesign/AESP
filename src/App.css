@@ -58,8 +58,6 @@ body {
   gap: var(--spacing-l);
   max-width: var(--width-container);
   width: 100%;
-  padding-top: 1em;
-  padding-bottom: 0; /* Remove padding-bottom */
   background-repeat: no-repeat;
 }
 
@@ -151,43 +149,25 @@ body {
   background-image: url('https://images.pexels.com/photos/2586537/pexels-photo-2586537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
 }
 
-
-.button {
-  display: flex;
-  padding: 0.8em;
-  text-align: center;
-  align-content: center;
-  color: #FFFFFF;
-  background: black;
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  border-radius: 12px;
-  width: fit-content;
-}
-
 /* Media query for smaller screens (e.g., smartphones) */
 @media (max-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
   .hero-section {
-    display: grid; /* Change the display property to grid */
-    grid-template-columns: 1fr; /* Create a single column layout for both cards and buttons */
-    gap: var(--spacing-l); /* Adjust the gap if needed */
-    align-items: center;
-    justify-content: center;
-  }
-
-  .button-grid {
     display: flex; /* Change the display property to flex */
-    flex-direction: column; /* Stack buttons vertically */
+    flex-direction: column; /* Stack cards and buttons vertically */
     align-items: center;
     justify-content: center;
   }
 
-  .button { 
-    font-size: 16px;
-    margin: 10px 0;
+
+  .button {
+    display: flex;
+    padding: 0.8em;
+    text-align: center;
+    color: #FFFFFF;
+    background: black;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    border-radius: 12px;
+    margin-top: 8px; /* Add some margin between buttons (adjust as needed) */
   }
 }
