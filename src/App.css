@@ -1,6 +1,6 @@
 /* Root variables */
 :root {
-  --background-dark: #2d3548;
+  --background-dark: #222222;
   --text-light: rgba(255, 255, 255, 0.6);
   --text-lighter: rgba(255, 255, 255, 0.9);
   --spacing-s: 8px;
@@ -151,8 +151,8 @@ body {
   border-radius: 12px;
   box-shadow: 0px 4px #CC3300;
   display: block;
-  width: 100%;
-  margin-bottom: 10px;
+  width: fit-content; /* Adjust width to fit content */
+  margin: 10px auto; /* Center horizontally by setting margin */
 }
 
 /* Media query for smaller screens (e.g., smartphones) */
@@ -168,3 +168,6 @@ body {
     margin: 10px;
   }
 }
+
+
+
