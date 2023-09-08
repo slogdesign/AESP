@@ -137,10 +137,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        {/* LGBTQ+ Card */}
         <section className="hero-section">
           <div className="card-grid">
-            
-            {/* LGBTQ+ Card */}
             <a className="card card__lgbtq" href="#">
               <div className="card__background" style={{ backgroundImage: "url('https://images.pexels.com/photos/3693901/pexels-photo-3693901.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')" }}></div>
               <div className="card__content">
@@ -154,7 +153,7 @@ class App extends Component {
             <a className="card card__domesticviolence" href="#">
               <div className="card__background" style={{ backgroundImage: "url('https://images.pexels.com/photos/6757341/pexels-photo-6757341.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')" }}></div>
               <div className="card__content">
-                <p className="card__category">Categroy</p>
+                <p className="card__category">Category</p>
                 <h3 className="card__heading">DV ASSISTANCE</h3>
                 <p className="card__photographer">(Mariana Montrazi)</p>
               </div>
@@ -182,13 +181,13 @@ class App extends Component {
           </div>
         </section>
 
-        <div className="responsive-buttons">
-          {/* Don't Call the Police Button */}
-          <button className="button">Don't Call the Police</button>
-
-          {/* 911 Button */}
-          <button className="button">911</button>
-        </div>
+        {/* Don't Call the Police and 911 Buttons */}
+        <section className="hero-section">
+          <div className="card-grid">
+            <a className="button" href="https://www.dontcallthepolice.com" target="_blank" rel="noopener noreferrer">Don't Call the Police</a>
+            <a className="button" href="tel:911">911</a>
+          </div>
+        </section>
       </div>
     );
   }
