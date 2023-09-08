@@ -148,26 +148,3 @@ body {
 .card__elderlyservices {
   background-image: url('https://images.pexels.com/photos/2586537/pexels-photo-2586537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
 }
-
-/* Media query for smaller screens (e.g., smartphones) */
-@media (max-width: 768px) {
-  .hero-section {
-    display: flex; /* Change the display property to flex */
-    flex-direction: column; /* Stack cards and buttons vertically */
-    align-items: center;
-    justify-content: center;
-  }
-
-
-  .button {
-    display: flex;
-    padding: 0.8em;
-    text-align: center;
-    color: #FFFFFF;
-    background: black;
-    text-transform: uppercase;
-    font-family: "Roboto", sans-serif;
-    border-radius: 12px;
-    margin-top: 8px; /* Add some margin between buttons (adjust as needed) */
-  }
-}
