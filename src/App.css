@@ -27,19 +27,13 @@ h1 {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust column width as needed */
-  gap: 2.5em; /* Adjust gap between buttons */
-  justify-content: center; /* Center the buttons horizontally within the grid */
+  gap: 2.5em; /* Adjust gap between cards */
+  justify-content: center; /* Center the cards horizontally within the grid */
   margin-top: 10px; /* Add margin to create space between .main and .grid */
 }
 
-/* Example custom styles for buttons */
-.button1,
-.button2,
-.button3,
-.button4,
-.button5,
-.button6,
-.button7 { /* Include the button7 class for the Elderly Services button */
+/* Example custom styles for cards */
+.card {
   padding: 0.8em;
   border: 0.1em solid;
   text-align: center;
@@ -49,13 +43,40 @@ h1 {
   font-family: "Roboto", sans-serif;
   border-radius: 12px;
   box-shadow: 0px 4px #CC3300;
-  display: block; /* Ensure buttons are displayed as blocks */
-  width: 100%; /* Make buttons expand to full width of their container */
-  margin-bottom: 10px; /* Add margin between buttons */
+  display: block; /* Ensure cards are displayed as blocks */
+  width: 100%; /* Make cards expand to full width of their container */
+  margin-bottom: 10px; /* Add margin between cards */
+}
+
+/* Card-specific styles based on class names */
+.card__lgbtq {
+  background-image: url('https://images.pexels.com/photos/3693901/pexels-photo-3693901.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.card__domesticviolence {
+  background-image: url('https://images.pexels.com/photos/6757341/pexels-photo-6757341.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.card__mentalhealth {
+  background-image: url('https://images.pexels.com/photos/7654802/pexels-photo-7654802.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.card__elderlyservices {
+  background-image: url('https://images.pexels.com/photos/2586537/pexels-photo-2586537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+/* Photographer attribution */
+.card::after {
+  content: attr(data-photographer);
+  display: block;
+  font-size: 12px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 5px;
 }
 
 .responsive-buttons {
-  margin-top: 20px; /* Add space above buttons 5 and 6 */
+  margin-top: 20px; /* Add space above buttons */
 }
 
 /* Media query for smaller screens (e.g., smartphones) */
@@ -64,14 +85,8 @@ h1 {
     grid-template-columns: 1fr; /* Single column layout for smaller screens */
   }
 
-  /* Responsive styles for buttons */
-  .button1,
-  .button2,
-  .button3,
-  .button4,
-  .button5,
-  .button6,
-  .button7 { 
+  /* Responsive styles for cards */
+  .card {
     font-size: 16px; /* Adjust font size for smaller screens */
     padding: 0.5em 1em; /* Adjust padding for smaller screens */
     margin: 10px; /* Adjust margin for spacing */

@@ -146,19 +146,19 @@ class App extends Component {
             <p className="card__category">LGBTQ+ Support</p>
             <h3 className="card__heading">Example Card Heading</h3>
           </div>
-
+  
           {/* Domestic Violence Card */}
           <div className="card card__domesticviolence">
             <p className="card__category">Domestic Violence Support</p>
             <h3 className="card__heading">Example Card Heading</h3>
           </div>
-
+  
           {/* Mental Health Card */}
           <div className="card card__mentalhealth">
             <p className="card__category">Mental Health Services</p>
             <h3 className="card__heading">Example Card Heading</h3>
           </div>
-
+  
           {/* Elderly Services Card */}
           <div className="card card__elderlyservices">
             <p className="card__category">Elderly Services</p>
@@ -176,5 +176,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;
