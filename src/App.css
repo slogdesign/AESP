@@ -5,7 +5,7 @@
   --text-lighter: rgba(255, 255, 255, 0.9);
   --spacing-s: 8px;
   --spacing-m: 16px;
-  --spacing-l: 24px;
+  --spacing-l: 12px; /* Adjust spacing-l to reduce the spacing */
   --spacing-xl: 32px;
   --spacing-xxl: 64px;
   --width-container: 1200px;
@@ -28,6 +28,9 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-image: linear-gradient(15deg, #000000 0%, #808080 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* Logo styles */
@@ -35,38 +38,39 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 150px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
+  width: 150px;
+  height: auto;
+  margin: 1em;
 }
 
 /* Hero section styles */
 .hero-section {
   align-items: center;
-  background-image: linear-gradient(15deg, #000000 0%, #808080 100%);
   display: flex;
-  min-height: 100%;
+  min-height: calc(100vh - 2em);
   justify-content: center;
-  padding: var(--spacing-xxl) var(--spacing-l);
+  background: none;
 }
 
-/* Card grid styles */
-.card-grid {
+.card-grid, .button-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: var(--spacing-l);
   max-width: var(--width-container);
   width: 100%;
-  padding-top: 4em;
+  padding-top: 1em;
+  padding-bottom: 0; /* Remove padding-bottom */
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 540px) {
-  .card-grid {
+  .card-grid, .button-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 960px) {
-  .card-grid {
+  .card-grid, .button-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -147,18 +151,18 @@ body {
   background-image: url('https://images.pexels.com/photos/2586537/pexels-photo-2586537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
 }
 
+
 .button {
+  display: flex;
   padding: 0.8em;
   text-align: center;
+  align-content: center;
   color: #FFFFFF;
   background: black;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   border-radius: 12px;
-  box-shadow: 0px 4px #CC3300;
-  display: block;
-  width: fit-content; /* Adjust width to fit content */
-  margin: 10px auto 10px auto; /* Center horizontally and apply margin to top and bottom */
+  width: fit-content;
 }
 
 /* Media query for smaller screens (e.g., smartphones) */
@@ -167,10 +171,23 @@ body {
     grid-template-columns: 1fr;
   }
 
-  /* Responsive styles for buttons */
+  .hero-section {
+    display: grid; /* Change the display property to grid */
+    grid-template-columns: 1fr; /* Create a single column layout for both cards and buttons */
+    gap: var(--spacing-l); /* Adjust the gap if needed */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-grid {
+    display: flex; /* Change the display property to flex */
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
+    justify-content: center;
+  }
+
   .button { 
     font-size: 16px;
-    padding: 0.5em 1em;
-    margin: 10px auto; /* Center the buttons horizontally on smaller screens */
+    margin: 10px 0;
   }
 }

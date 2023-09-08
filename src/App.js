@@ -137,9 +137,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <a href="https://www.slogdesign.io" target="_blank" rel="noopener noreferrer">
-  <img src="https://www.slogdesign.io/wp-content/uploads/2023/06/SLOGO3-1.png" alt="SLOGO" className="logo" />
-</a>
+        <a href="https://www.slogdesign.io" target="_blank" rel="noopener noreferrer">
+          <img src="https://www.slogdesign.io/wp-content/uploads/2023/06/SLOGO2-1.png" alt="SLOGO" className="logo" />
+        </a>
 
         {/* LGBTQ+ Card */}
         <section className="hero-section">
@@ -186,18 +186,13 @@ class App extends Component {
         </section>
 
         {/* Don't Call the Police and 911 Buttons */}
-        <section className="hero-section">
-          <div className="button-grid">
-            <a className="button" href="https://www.dontcallthepolice.com" target="_blank" rel="noopener noreferrer">Don't Call the Police</a>
-            <a className="button" href="tel:911">911</a>
-          </div>
+        <section className="button-grid"> {/* Use a separate section for buttons */}
+          <a className="button" href="https://www.dontcallthepolice.com" target="_blank" rel="noopener noreferrer">Don't Call the Police</a>
+          <a className="button" href="tel:911">911</a>
         </section>
       </div>
     );
   }
 }
+
 export default App;
-
-
-
-
