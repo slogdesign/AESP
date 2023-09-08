@@ -45,14 +45,14 @@
       "last 1 safari version"
     ]
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "testDbConnection.js",
+  "description": "This project was bootstrapped with Create React App.",
+  "main": "index.js",
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/slogdesign/AESP.git"
+    "url": "https://github.com/slogdesign/AESP.git"
   },
   "keywords": [],
   "author": "",
@@ -60,5 +60,5 @@
   "bugs": {
     "url": "https://github.com/slogdesign/AESP/issues"
   },
-  "homepage": "/slogdesign/AESP"
+  "homepage": "https://slogdesign.github.io/AESP/"
 }
