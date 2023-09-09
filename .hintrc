@@ -19,6 +19,8 @@
           "width: fit-content"
         ]
       }
-    ]
+    ],
+    "no-inline-styles": "off",
+    "meta-viewport": "off"
   }
 }
