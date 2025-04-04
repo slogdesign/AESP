@@ -13,8 +13,8 @@ Get Involved
 AESP is an open-source project, and we welcome contributions from developers, designers, and anyone interested in furthering its mission. Whether it's improving the user interface, adding new support organizations, or enhancing the geolocation features, your contributions can help make our communities safer and more inclusive.
 
 Support
-If you have any questions, feedback, or encounter issues while using AESP, please don't hesitate to reach out. Contact us at paulina@slogdesign.com for assistance.
+If you have any questions, feedback, or encounter issues while using AESP, please don't hesitate to reach out. Contact us at paucamcalderon@gmail.com for assistance.
 
 Thank you for joining us in our mission to create a more compassionate and effective emergency support system.
 
-www.slogdesign.io
+
